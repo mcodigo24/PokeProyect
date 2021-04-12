@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/pokebola.svg" type="image/x-icon">
+    <title>Poke Proyect</title>   
+</head>
+<body class="flex flex-col h-screen justify-between bg-gray-300">
+    <header class="w-full h-14 bg-red-600 flex justify-center items-center">
+        <h2 class="pt-1 text-2xl text-center font-semibold tracking-wider">Poke Proyect</h2>
+    </header>
+
+    <main class="flex flex-col justify-center items-center">
+        <div class="box-content border-4 mx-4 p-8 border-black rounded-lg bg-red-600">
+            <form>
+                <input class="mb-4 md:mb-0 py-1 pl-2 border-2 border-black rounded-md" id="inputId" type="number" placeholder="PokeId">
+                <input class="px-4 py-1 rounded shadow-lg bg-yellow-400 text-black-600 hover:shadow-none hover:bg-yellow-500" id="btn" type="button" value="Cargar">
+            </form>
+        </div>
+        <div class="mt-8 text-white box-content border-4 pt-4 pb-8 px-8 border-black rounded-lg bg-red-600">               
+            <h3 class="px-2 inline text-left bg-yellow-500 rounded-lg text-black border-2 border-black" id="pokeid">#Id</h3>
+            <h3 class="uppercase my-4 bg-yellow-500 rounded-lg text-black border-2 border-black text-center" id="name">Name</h3>
+            <img class="border-2 border-black rounded-lg" id="pokeimage" width="150" height="150"></img>
+        </div>
+        </div>
+    </main>   
+    
+    <footer class="h-14 w-full px-4 bg-red-600 flex justify-between items-center">        
+        <p>Este proyecto utiliza la Pokeapi</p>
+        <a href="https://github.com/mcodigo24"><img src="images/github.svg" alt="github" width="35" height="50"></a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
